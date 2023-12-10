@@ -1,7 +1,7 @@
-res://Player/blaster.tscn
 res://game.tscn
-res://Terrain/terrain.tscn
-res://Terrain/tile_14.tscn
+res://Assets/blaster.tres
+res://Terrain/maze.tscn
+res://Player/player.tscn
 res://Terrain/tile_0.tscn
 res://Terrain/tile_1.tscn
 res://Terrain/tile_2.tscn
@@ -16,7 +16,8 @@ res://Terrain/tile_10.tscn
 res://Terrain/tile_11.tscn
 res://Terrain/tile_12.tscn
 res://Terrain/tile_13.tscn
+res://Terrain/tile_14.tscn
 res://Terrain/tile_15.tscn
-res://Terrain/Maze.gd
-res://Terrain/maze.tscn
-res://Player/player.tscn
+res://Player/blaster.tscn
+res://Player/blaster.gd
+res://Terrain/Sculpture.gd

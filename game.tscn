@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1udix0l4b2mx"]
+[gd_scene load_steps=8 format=3 uid="uid://d1udix0l4b2mx"]
 
 [ext_resource type="PackedScene" uid="uid://dhfdyacxcqn48" path="res://Player/player.tscn" id="1_ov0f6"]
 [ext_resource type="PackedScene" uid="uid://b5p4yyixh4rj0" path="res://Terrain/terrain.tscn" id="2_yvtya"]
 [ext_resource type="PackedScene" uid="uid://bfvbx3xorrjnp" path="res://Terrain/maze.tscn" id="3_ffinu"]
+[ext_resource type="Script" path="res://Terrain/Sculpture.gd" id="4_7sldc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sxxqn"]
 
@@ -30,3 +31,12 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 9)
 
 [node name="Maze" parent="." instance=ExtResource("3_ffinu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24.8575)
+
+[node name="Sculpture" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.7155, 0.836037, 14.6651)
+use_collision = true
+script = ExtResource("4_7sldc")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Sculpture"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19759, 0.292687, 0.202688)
+operation = 2

@@ -1,5 +1,8 @@
-StaticBody3D
 MeshInstance3D
+RayCast3D
+CSGSphere3D
+CSGBox3D
+StaticBody3D
 Camera3D
 Node3D
 StaticBody2D

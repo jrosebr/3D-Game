@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cen46taablt84"]
+[gd_scene load_steps=8 format=3 uid="uid://cen46taablt84"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wbd0q"]
 albedo_color = Color(0.180392, 0.180392, 0.180392, 1)
@@ -15,10 +15,13 @@ albedo_color = Color(0.54902, 0.54902, 0.54902, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_duv5r"]
 material = SubResource("StandardMaterial3D_xh8gj")
-size = Vector3(4.2, 4, 0.1)
+size = Vector3(4.2, 4, 0.2)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oui5x"]
-points = PackedVector3Array(-2.13333, -2.03333, -0.0833333, 2.09836, 2, 0.0489071, 2.13333, 2.03333, -0.0833333, 2.13333, -2.03333, -0.0833333, -2.13333, 2.03333, -0.0833333, -2.09836, -2, 0.0489071, 2.09836, -2, 0.0489071, -2.09836, 2, 0.0489071)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yw7dl"]
+points = PackedVector3Array(-2.13333, -2.03333, -0.133333, 2.06651, 2.03333, 0.133333, 2.13333, 2.03294, 0.133333, -2.13333, -2.03333, 0.133333, -2.13333, 2.03333, -0.133333, 2.13333, -2.03333, -0.133333, 2.13333, 2.03294, -0.133333, 2.13333, -2.03333, 0.133333, -2.13333, 2.03333, 0.133333)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g43mh"]
+points = PackedVector3Array(-2.13333, -2.03333, -0.133333, 2.06651, 2.03333, 0.133333, 2.13333, 2.03294, 0.133333, -2.13333, -2.03333, 0.133333, -2.13333, 2.03333, -0.133333, 2.13333, -2.03333, -0.133333, 2.13333, 2.03294, -0.133333, 2.13333, -2.03333, 0.133333, -2.13333, 2.03333, 0.133333)
 
 [node name="Tile3" type="StaticBody3D"]
 
@@ -34,7 +37,7 @@ mesh = SubResource("BoxMesh_duv5r")
 
 [node name="N_CS" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9, -1.9)
-shape = SubResource("ConvexPolygonShape3D_oui5x")
+shape = SubResource("ConvexPolygonShape3D_yw7dl")
 
 [node name="E" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.9, 1.9, 0)
@@ -42,4 +45,4 @@ mesh = SubResource("BoxMesh_duv5r")
 
 [node name="E_CS" type="CollisionShape3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.9, 1.9, 0)
-shape = SubResource("ConvexPolygonShape3D_oui5x")
+shape = SubResource("ConvexPolygonShape3D_g43mh")
