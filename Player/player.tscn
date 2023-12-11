@@ -33,7 +33,6 @@ current = true
 [node name="Weapon" type="Node3D" parent="Pivot"]
 
 [node name="Blaster" parent="Pivot/Weapon" instance=ExtResource("2_8im8r")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.8, 1.6, -0.8)
 
 [node name="Body_Collision" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
@@ -42,3 +41,8 @@ shape = SubResource("CapsuleShape3D_0fan5")
 [node name="Feet_Collision" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, 0)
 shape = SubResource("BoxShape3D_diq7p")
+
+[node name="Pickup_Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Pickup_Timer" to="." method="_on_pickup_timer_timeout"]
