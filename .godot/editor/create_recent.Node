@@ -1,9 +1,9 @@
+Timer
 Button
 Label
 ColorRect
 Control
 CanvasLayer
-Timer
 AudioStreamPlayer
 AudioListener3D
 NavigationAgent3D

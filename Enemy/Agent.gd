@@ -46,9 +46,14 @@ func damage():
 		dying = true
 		$AnimationPlayer.play("Death")
 		velocity = Vector3.ZERO
+		$Death_Timer.start()
 
 
 func _on_timer_timeout():
 	for b in $Area3D.get_overlapping_bodies():
 		if b.has_method("damage"):
 			b.damage()
+
+
+func _on_death_timer_timeout():
+	get_tree().change_scene_to_file("res://UI/Win_Screen.tscn")

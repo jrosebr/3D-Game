@@ -36,3 +36,5 @@ res://UI/main_menu.tscn
 res://UI/Menu.gd
 res://global.gd
 res://game.gd
+res://UI/Lose_Screen.tscn
+res://UI/Win_Screen.tscn

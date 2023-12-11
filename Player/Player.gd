@@ -69,4 +69,4 @@ func _on_pickup_timer_timeout():
 func damage():
 	health -= 1
 	if health <= 0:
-		get_tree().change_scene_to_file("res://UI/end_game.tscn")
+		get_tree().change_scene_to_file("res://UI/Lose_Screen.tscn")

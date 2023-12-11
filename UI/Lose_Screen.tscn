@@ -1,15 +1,15 @@
 [gd_scene load_steps=2 format=3 uid="uid://dhkk1fe28lhfi"]
 
-[ext_resource type="Script" path="res://UI/Main_Menu.gd" id="1_wpna1"]
+[ext_resource type="Script" path="res://UI/Main_Menu.gd" id="1_xws06"]
 
-[node name="End_Menu" type="Control"]
+[node name="Lose_Screen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_wpna1")
+script = ExtResource("1_xws06")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -30,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "You Lose!
 
-Thanks for Playing!"
+Thank you for Playing!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
